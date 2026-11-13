@@ -3,3 +3,21 @@ body {
     color:rgb(58, 46, 135);
 }
 
+.form {
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    margin: 15px;
+}
+
+.btnRow {
+    margin-top: 20px;
+}
+
+.form-check-input {
+    margin-left: 10px;
+}
+
+.nem-fizetett {
+    color: red !important;
+    font-style: italic;
+}
