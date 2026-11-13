@@ -27,9 +27,9 @@
                     <tbody>
                         <% parkolasok.forEach(p => { %>
                             <tr>
-                                <td class="<%= p.fizetve? 'nem-fizetett' : '' %>"><%= p.rendszam %></td>
-                                <td class="<%= p.fizetve? 'nem-fizetett' : '' %>"><%= p.tulajdonos %></td>
-                                <td class="<%= p.fizetve? 'nem-fizetett' : '' %>"><%= p.idotartam %></td>
+                                <td class="<%= !p.fizetve? 'nem-fizetett' : '' %>"><%= p.rendszam %></td>
+                                <td class="<%= !p.fizetve? 'nem-fizetett' : '' %>"><%= p.tulajdonos %></td>
+                                <td class="<%= !p.fizetve? 'nem-fizetett' : '' %>"><%= p.idotartam %></td>
                             </tr>
                         <% }) %>
                     </tbody>
